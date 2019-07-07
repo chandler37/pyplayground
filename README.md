@@ -1,5 +1,7 @@
 # pyplayground
 
+![ultracompelling logo](pyplayground.png)
+
 This is a repository to help you learn Python.
 
 ## Committing
