@@ -4,6 +4,13 @@
 
 This is a repository to help you learn Python.
 
+## Renaming it from pyplayground to your chosen package name
+
+Run `python3 rename_pyplayground.py --new-name=your-chosen-name`
+
+If you do not have `python3` in your `PATH`, install
+[Homebrew](https://brew.sh/) and then run `brew install python`.
+
 ## Committing
 
 - git checkout master
