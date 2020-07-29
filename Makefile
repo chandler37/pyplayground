@@ -32,7 +32,7 @@ venv:
 ifndef PYTHON3
 	$(error "python3 is not available; please run make install_tools")
 endif
-	python3 -m venv venv
+	$(PYTHON3) -m venv venv
 	@echo "The virtualenv is not active unless you run the following:"
 	@echo "source venv/bin/activate"
 	@echo ""
