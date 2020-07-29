@@ -62,3 +62,9 @@ If you want a https://pypi.org/ package, e.g. numpy, just add it to requirements
 - If it works, you might want to freeze the version and the version of any
   transitive dependencies that were brought in via `make unfreezeplus` but it
   will perform some upgrades as well that you might want to undo.
+
+You may have already installed the package globally on your system, but that's
+insufficient because pyplayground uses a virtual environment courtesy of the
+`venv` Python standard library. Here you must be explicit about your
+dependencies, but you can use exactly the versions that you want and you can
+peacefully coexist with other projects that use different versions.
