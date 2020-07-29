@@ -13,6 +13,8 @@ If you do not have `python3` in your `PATH`, install
 
 ## Committing
 
+Essentially you want https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow/
+
 - git checkout master
 - git pull --ff-only
 - git checkout origin/master -b featurebranch
@@ -26,7 +28,7 @@ If you do not have `python3` in your `PATH`, install
 - back to step 1!
 
 
-## Installing
+## Installing (but not developing)
 
 TODO: Make setup.py work so people can install this. You could even put this on
 pypi; the directory structure is adequate.
@@ -50,3 +52,13 @@ __pycache__
 /venv
 .cache
 ```
+
+
+### Adding a third-party package as a dependency
+
+If you want a https://pypi.org/ package, e.g. numpy, just add it to requirements.txt and then run `make test`:
+
+- `echo "numpy" >> requirements.txt && make test`
+- If it works, you might want to freeze the version and the version of any
+  transitive dependencies that were brought in via `make unfreezeplus` but it
+  will perform some upgrades as well that you might want to undo.

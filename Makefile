@@ -42,7 +42,7 @@ endif
 install: venv/installation.success
 
 venv/installation.success: requirements.txt | venv
-	$(ACTIVATE_VENV) && pip3 install -r $<
+	$(ACTIVATE_VENV) && pip install -U pip && pip3 install -r $<
 	touch $@
 
 .PHONY: shell
